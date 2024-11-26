@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>VitoMaite15</title>
+        <meta charset="utf-8">
+        <meta name="description" content="Este es un documento HTML5">
+        <meta name="keywords" content="HTML, CSS, JavaScript">
+        <link rel="stylesheet" href="css/VitoMaite15.css">
+        <link rel="icon" href="imagenes/logoVito.png" type="image/png">
+        <script src="js/principal.js"></script>
+        
+    </head>
+    <body>
+        <header id="cabeceralogo">
+            <a href="index.html"><img id="logo" src="imagenes/logoVito.png" alt="Logo"></a>
+            <h1>VitoMaite15</h1>
+            <div id="boton-logueo">
+                <a href="login.html"> <button> Iniciar sesión </button></a>
+            </div>
+        </header>
+        <main>
+               <div id="busqueda">
+                   <form id="searchForm" method ="get">
+                    <p>¿QUE BUSCAS?:</p>
+                     <select id="genero" name="genero">
+                        <option value="F">MUJER</option>
+                        <option value="M">HOMBRE</option>
+                        <option value="ambos">AMBOS</option>
+                     </select>
+                    <p>EDAD MINIMA:</p>
+                    <input type="text" id="edadMinima" name="edadMin" placeholder="Edad minima"> 
+                     <p>EDAD MAXIMA:</p>
+                     <input type="text" id="edadMaxima" name="edadMax" placeholder="Edad maxima"><!-- comment --> 
+                    <p>Provincia:</p>
+                     <select id="provincia" name="provincia">
+                        <option value="Araba">ARABA</option>
+                        <option value="Bizkaia">BIZKAIA</option>
+                        <option value="Gipuzkoa">GIPUZKOA</option>
+                     </select>  
+                    <button type="submit">Buscar</button>
+                    <button type="reset">Limpiar</button>
+                </form>
+          </div>
+            <div id="listaPersonas"></div>
+        </main>
+    </body>
+</html>

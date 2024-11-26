@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>VitoMaite15</title>
+        <meta charset="utf-8">
+        <meta name="description" content="Este es un documento HTML5">
+        <meta name="keywords" content="HTML, CSS, JavaScript">
+        <link rel="stylesheet" href="css/VitoMaite15.css">
+        <link rel="icon" href="imagenes/logoVito.png" type="image/png">
+        <script src="https://maps.googleapis.com/maps/api/js?key=TU_CLAVE_API"></script>
+
+
+    </head>
+    <body>
+        <header id="cabeceralogo">
+            <a href="principalLogin.html"><img id="logo" src="imagenes/logoVito.png" alt="Logo"></a>
+            <h1>VitoMaite15</h1>
+            <div id="usuario-container">
+               <section id="perfilUsuario">
+                <img id="fotoUsuario" alt="Foto de perfil del usuario"><!-- comment -->
+                <p id="nombreUsuario"></p>
+               <!-- Contenedor para editar perfil -->
+               <div id="editarPerfil" class="oculto">
+                   <h2>Modificar Perfil</h2>
+                   <form id="formEditarPerfil">
+                       <!-- Imagen del usuario -->
+                       <div id="fotoUsuarioContainer">
+                           <label for="fotoInput">Foto de Perfil:</label>
+                                <div id="dropZone">
+                                    <p>Arrastra aquí o haz clic para subir</p>
+                                    <input type="file" id="fotoInput" accept="image/*" style="display: none;">
+                                    <img id="fotoPreview" src="" alt="Vista previa" style="display: none;" >
+                                 </div>
+                       </div>
+
+                       <!-- Selección de provincia -->
+                       <label for="provincia">Provincia:</label>
+                       <select id="provincia">
+                           <option value="Araba">Araba</option>
+                           <option value="Bizkaia">Bizkaia</option>
+                           <option value="Gipuzkoa">Gipuzkoa</option>
+                       </select>
+
+                       <!-- Botón para guardar los cambios -->
+                       <button type="submit">Aceptar</button>
+                   </form>
+               </div>
+           </section>
+
+                <a href="gestionarAficiones.html"><button>Editar Aficiones</button></a>
+                <div id="boton-logueo">
+                    <a href="index.html"><button>Cerrar sesión</button></a>
+                </div>
+            </div>
+            <script src="js/principalLogin.js"></script>
+        </header>
+        <nav id="menuprincipal">
+        <div>
+            <ul id="listamenu">
+                <li><a href="principalLogin.html">Inicio</a></li>
+                <li><a href="verLikesMatches.html">Ver Likes y matches</a></li>
+             </ul>
+        </div>
+        <div id="busquedaAficionesContainer">
+            <button id="toggleBusquedaAficionesBtn">Búsqueda por Aficiones</button>
+            <div id="busquedaAficiones" class="oculto">
+                <h2>Selecciona Aficiones</h2>
+                <form id="searchAficionesForm">
+                     <div id="aficionesCheckboxes">
+                <!-- Opciones dinámicas como checkboxes -->
+                    </div>
+                    <button type="submit">Buscar</button>
+                </form>
+                <div id="listaResultadosAficiones">
+                    <!-- Aquí se mostrarán los resultados -->
+                </div>
+            </div>
+        </div>
+   
+        </nav>
+        <main>
+             <div id="busqueda">
+                <form id="searchForm" method="get">
+                    <p>¿QUE BUSCAS?:</p>
+                     <select id="genero" name="genero">
+                        <option value="F">MUJER</option>
+                        <option value="M">HOMBRE</option>
+                        <option value="ambos">AMBOS</option>
+                    </select>   
+                    <p>EDAD MINIMA:</p>
+                    <input type="text" id="edadMinima" name="edadMin" placeholder="Edad minima">
+                     <p>EDAD MAXIMA:</p>
+                     <input type="text" id="edadMaxima" name="edadMax" placeholder="Edad maxima"><!-- comment -->
+                    <p>Provincia:</p>
+                     <select id="provincia1" name="provincia1">
+                        <option value="Araba">ARABA</option>
+                        <option value="Bizkaia">BIZKAIA</option>
+                        <option value="Gipuzkoa">GIPUZKOA</option>
+                    </select>  
+                    <button type="submit">Buscar</button>
+                </form>
+            </div>
+            <div id="detallesModal" class="modal">
+                <div class="modal-contenido">
+                    <span id="cerrarModal" class="cerrar">&times;</span>
+                    <div id="detallesUsuario">
+            <!-- Aquí se mostrarán los detalles del usuario -->
+                    </div>
+                    <div id="mapa" style="width: 100%; height: 300px; margin-top: 10px;"></div>
+
+                </div>
+            </div>
+            <ul id="listaPersonas"></ul>
+        </main>
+        <footer id="pielogo">
+            <div>
+                <section class="seccionpie">
+                    <p><a href="principalLogin.html">Principal</a></p>
+                    <p><a href="verLikesMatches.html">Ver Likes</a></p>
+                </section>
+            </div>
+        </footer>
+    </body>
+</html>

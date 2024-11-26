@@ -1,0 +1,450 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 07-nov-2023, 16:21:54
+    Author     : jipotvim
+*/
+* {
+    margin: 0px;
+    padding: 0px;
+}
+#user-options{
+    display: flex;
+}
+#logo{
+    width: 50px;
+    height: auto;
+    display:flex;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+#fotoUsuario{
+    width: 50px;
+    height: auto;
+    display:flex;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+#cabeceralogo > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#cabeceralogo > a{
+    transform: scale(1.1); 
+    cursor: pointer;
+    padding: 5px;
+}
+
+#cabeceralogo > p, #boton-logueo {
+    margin-left: auto;
+}
+#cabeceralogo {
+    background-color: #3498db; 
+    padding: 10px; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#cabeceralogo h1 {
+    font: bold 36px Calibri, sans-serif;
+    color: #FFFFFF;
+    margin: 0;
+}
+    
+#boton-logueo {
+    display: flex;
+    align-items: center;
+}
+
+
+#boton-logueo a {
+    margin-left: auto;
+}
+
+#boton-logueo button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #1f3a4a;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#boton-logueo button:hover {
+    background-color: #ffffff;
+    color: #1f3a4a;
+}
+#menuprincipal {
+    width: 100%; /* Ancho completo */
+    background-color: #9FC8D9;
+    border-top: 1px solid #094660;
+    border-bottom: 1px solid #094660;
+}
+
+#menuprincipal > div {
+    display: flex;
+    justify-content: flex-start; /* Alinea los elementos a la izquierda */
+    width: 100%;
+    margin: 0;
+}
+#menuprincipal li {
+    display: inline-block;
+    height: 35px;
+    padding: 15px 10px 0px 10px;
+    margin-right: 5px;
+}
+#menuprincipal li:hover {
+    background-color: #6FACC6;
+}
+#menuprincipal a {
+    font: bold 18px Arial, sans-serif;
+    color: #333333;
+    text-decoration: none;
+}
+main {
+    width: 96%;
+    padding: 2%;
+}
+main > div {
+    width: 960px;
+    margin: 0px auto;
+}
+main > p{
+    text-align: center;
+}
+#articulosprincipales {
+    float: left;
+    width: 620px;
+    padding-top: 30px;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+}
+#infoadicional {
+    float: right;
+    width: 280px;
+    padding: 20px;
+    background-color: #E7F1F5;
+    border-radius: 10px;
+}
+#infoadicional h1 {
+    font: bold 18px Arial, sans-serif;
+    color: #333333;
+    margin-bottom: 15px;
+}
+.recuperar {
+    clear: both;
+}
+article {
+    position: relative;
+    padding: 0px 40px 20px 40px;
+}
+article time {
+    display: block;
+    position: absolute;
+    top: -5px;
+    left: -70px;
+    width: 80px;
+    padding: 15px 5px;
+
+    background-color: #094660;
+    box-shadow: 3px 3px 5px rgba(100, 100, 100, 0.7);
+    border-radius: 5px;
+}
+.numerodia {
+    font: bold 36px Verdana, sans-serif;
+    color: #FFFFFF;
+    text-align: center;
+}
+.nombredia {
+    font: 12px Verdana, sans-serif;
+    color: #FFFFFF;
+    text-align: center;
+}
+article h1 {
+    margin-bottom: 5px;
+    font: bold 30px Georgia, sans-serif;
+}
+article p {
+    font: 18px Georgia, sans-serif;
+}
+figure {
+    margin: 10px 0px;
+}
+figure img {
+    padding: 5px;
+    border: 1px solid;
+}
+#pielogo {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: #0F76A0;
+    color: #fff;
+    position: fixed;
+    text-align: center;
+    padding: 10px 0;
+}
+
+#pielogo > div {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.seccionpie {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.seccionpie h1 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.seccionpie p {
+    margin: 0 10px;
+}
+
+.seccionpie a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 10px;
+}
+
+.seccionpie a:hover {
+    text-decoration: underline;
+}
+#listamenu > li {
+    position: relative;
+    display: inline-block;
+    height: 35px;
+    padding: 15px 10px 0px 10px;
+    margin-right: 5px;
+}
+#listamenu li > ul {
+    display: none;
+    position: absolute;
+    top: 50px;
+    left: 0px;
+
+    background-color: #9FC8D9;
+    box-shadow: 3px 3px 5px rgba(100, 100, 100, 0.7);
+    border-radius: 0px 0px 5px 5px;
+
+    list-style: none;
+    z-index: 1000;
+}
+#listamenu li > ul > li {
+    width: 120px;
+    height: 35px;
+    padding-top: 15px;
+    padding-left: 10px;
+}
+#listamenu li:hover ul {
+    display: block;
+}
+#listamenu a {
+    font: bold 18px Arial, sans-serif;
+    color: #333333;
+    text-decoration: none;
+}
+#menuprincipal li:hover {
+    background-color: #6FACC6;
+}
+
+#busqueda {
+    margin: 20px auto; /* Alinea el formulario en el centro */
+    text-align: center;
+    margin-bottom: 20px; 
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center; /* Alinea los elementos del formulario al centro */
+}
+
+label {
+    font-size: 16px;
+    margin: 10px;
+}
+
+select, input[type="text"] {
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+button{
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+button:hover{
+    background-color: #2980b9;
+}
+
+#usuario-container {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+#nombreUsuario{
+    margin-right: 10px; /* Ajusta el espacio entre los elementos si es necesario */
+}
+
+#nProd{
+    margin-left: 10px;
+}
+
+#mapa {
+    /* Establece un tamaño para el contenedor del mapa */
+    width: 70%; /* O el ancho que desees */
+    height: 100%; /* O la altura que desees */
+    /* Asegúrate de que el contenedor tenga dimensiones para que el mapa se muestre correctamente */
+    position: relative;
+}
+/* Estilo para el cuadro de edición de perfil */
+#editarPerfil {
+    border: 1px solid #ccc;
+    padding: 20px;
+    width: 300px;
+    margin-top: 20px;
+    background: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Zona de Drag and Drop */
+#dropZone {
+    border: 2px dashed #ccc;
+    padding: 10px;
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+/* Imagen de vista previa */
+#fotoPreview {
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+    object-fit: contain; /* Asegura que la imagen se ajuste dentro del área */
+    position: absolute; /* Coloca la imagen sobre el área de drag and drop */
+    top: 0;
+    left: 0;
+    width: 100%; /* Ajusta la imagen al tamaño del contenedor */
+    height: 100%; /* Ajusta la imagen al tamaño del contenedor */
+    z-index: 1; /* Coloca la imagen en el frente */
+}
+
+/* Texto y elementos dentro del dropZone */
+#dropZone p {
+    position: absolute;
+    color: #666;
+    font-size: 14px;
+    z-index: 0; /* Coloca el texto detrás de la imagen */
+    text-align: center;
+    width: 100%;
+}
+
+
+/* Clase oculta para esconder elementos */
+.oculto {
+    display: none;
+}
+.modal {
+    display: none; /* Oculto por defecto */
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-contenido {
+    background-color: white;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 50%;
+    border-radius: 8px;
+}
+
+.cerrar {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.cerrar:hover,
+.cerrar:focus {
+    color: black;
+    text-decoration: none;
+}
+
+/* Diseño del contenedor */
+#busquedaAficionesContainer {
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+}
+
+/* Botón de menú */
+.menu-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.menu-button:hover {
+    background-color: #0056b3;
+}
+
+/* Grid para las aficiones */
+.aficiones-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 10px;
+    margin: 10px 0;
+}
+
+.aficiones-grid label {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}

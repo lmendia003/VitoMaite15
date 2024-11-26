@@ -1,0 +1,43 @@
+#modificarPerfil {
+    max-width: 500px;
+    margin: 30px auto;
+    text-align: center;
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#modificarPerfil h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+#modificarForm label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+#modificarForm select,
+#modificarForm input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#modificarForm button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#modificarForm button:hover {
+    background-color: #2980b9;
+}
